@@ -1,0 +1,10 @@
+# Dependencies
+node_modules
+
+# Build Outputs
+dist
+packages/.vitepress/dist
+
+# Cache
+packages/.vitepress/cache
+index.json

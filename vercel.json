@@ -1,0 +1,18 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"buildCommand": "vp run docs:build",
+	"outputDirectory": "packages/.vitepress/dist",
+	"installCommand": "pnpm install",
+	"framework": "vitepress",
+	"headers": [
+		{
+			"source": "/assets/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "max-age=31536000, immutable"
+				}
+			]
+		}
+	]
+}

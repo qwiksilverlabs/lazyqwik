@@ -1,0 +1,40 @@
+packages:
+  - packages/*
+allowBuilds:
+  esbuild: true
+
+catalogs:
+  dev:
+    '@builder.io/qwik': ^1.19.2
+    '@vite-pwa/vitepress': ^1.1.0
+    'bumpp': '^11.0.1'
+    es-toolkit: ^1.45.1
+    jiti: ^2.6.1
+    oxc-minify: ^0.125.0
+    pathe: ^2.0.3
+    taze: ^19.11.0
+    tinyglobby: ^0.2.16
+    vite: npm:@voidzero-dev/vite-plus-core@latest
+    vite-plus: ^0.1.18
+    vitepress: 2.0.0-alpha.17
+    vitest: npm:@voidzero-dev/vite-plus-test@latest
+    vue: ^3.5.32
+  lint:
+    oxlint-plugin-qwik: ^0.0.8
+  types:
+    '@types/node': ^24.12.2
+    typescript: ^5.9.3
+
+overrides:
+  vite: 'catalog:dev'
+  vitest: 'catalog:dev'
+
+peerDependencyRules:
+  allowAny:
+    - vite
+    - vitest
+  allowedVersions:
+    vite: '*'
+    vitest: '*'
+
+shellEmulator: true

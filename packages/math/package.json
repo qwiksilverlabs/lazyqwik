@@ -1,0 +1,52 @@
+{
+	"name": "@lazyqwik/math",
+	"version": "0.0.1",
+	"description": "Collection of essential Qwik hooks",
+	"keywords": [
+		"lazyqwik",
+		"qwik",
+		"qwik-use",
+		"utils"
+	],
+	"homepage": "https://github.com/qwiksilverlabs/lazyqwik",
+	"bugs": {
+		"url": "https://github.com/qwiksilverlabs/lazyqwik/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Toby Nguyen",
+		"email": "hi@tobynguyen.net",
+		"url": "https://tobynguyen.net"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/qwiksilverlabs/lazyqwik.git",
+		"directory": "packages/math"
+	},
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"exports": {
+		".": "./dist/index.mjs",
+		"./package.json": "./package.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "vp pack",
+		"test": "vp test",
+		"test:watch": "vp test watch"
+	},
+	"dependencies": {
+		"@lazyqwik/shared": "workspace:"
+	},
+	"peerDependencies": {
+		"@builder.io/qwik": "catalog:dev"
+	},
+	"engines": {
+		"node": ">=22.12.0"
+	},
+	"packageManager": "pnpm@10.33.0"
+}

@@ -1,0 +1,42 @@
+{
+	"name": "@lazyqwik/monorepo",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Collection of essential Qwik hooks",
+	"type": "module",
+	"scripts": {
+		"dev": "vp run -r dev",
+		"test": "vp run -r test",
+		"test:watch": "vp run -r test:watch",
+		"check": "vp check",
+		"check:fix": "vp check --fix",
+		"up": "vp exec taze",
+		"bump": "vp exec bumpp",
+		"prepare": "vp config",
+		"docs": "vitepress dev packages",
+		"docs:preview": "vitepress preview packages",
+		"update": "vp run -r update"
+	},
+	"devDependencies": {
+		"@builder.io/qwik": "catalog:dev",
+		"@lazyqwik/metadata": "workspace:*",
+		"@types/node": "catalog:types",
+		"@vite-pwa/vitepress": "catalog:dev",
+		"bumpp": "catalog:dev",
+		"es-toolkit": "catalog:dev",
+		"jiti": "catalog:dev",
+		"oxc-minify": "catalog:dev",
+		"oxlint-plugin-qwik": "catalog:lint",
+		"pathe": "catalog:dev",
+		"taze": "catalog:dev",
+		"tinyglobby": "catalog:dev",
+		"typescript": "catalog:types",
+		"vite-plus": "catalog:dev",
+		"vitepress": "catalog:dev",
+		"vue": "catalog:dev"
+	},
+	"engines": {
+		"node": ">=22.12.0"
+	},
+	"packageManager": "pnpm@10.33.0"
+}

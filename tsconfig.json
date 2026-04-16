@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		/* Base Options */
+		"target": "ES2020",
+		"lib": ["es2020", "DOM"],
+		"module": "ES2020",
+		"moduleResolution": "Bundler",
+		"rootDir": ".",
+
+		/* Qwik */
+		"jsx": "react-jsx",
+		"jsxImportSource": "@builder.io/qwik",
+		"isolatedModules": true,
+
+		"paths": {
+			"@lazyqwik/core": ["./packages/core/src/index.ts"],
+			"@lazyqwik/core/*": ["./packages/core/src/*"],
+			"@lazyqwik/math": ["./packages/math/src/index.ts"],
+			"@lazyqwik/math/*": ["./packages/math/src/*"],
+			"@lazyqwik/shared": ["./packages/shared/src/index.ts"],
+			"@lazyqwik/shared/*": ["./packages/shared/src/*"]
+		},
+
+		"resolveJsonModule": true,
+
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"incremental": true
+	},
+	"include": ["*.ts", "packages", "vite.config.ts"]
+}
