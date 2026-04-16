@@ -21,7 +21,6 @@
 		"@builder.io/qwik": "catalog:dev",
 		"@lazyqwik/metadata": "workspace:*",
 		"@types/node": "catalog:types",
-		"@vite-pwa/vitepress": "catalog:dev",
 		"bumpp": "catalog:dev",
 		"es-toolkit": "catalog:dev",
 		"jiti": "catalog:dev",

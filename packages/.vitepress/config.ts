@@ -1,8 +1,6 @@
 import { defineConfig } from 'vitepress';
-import { withPwa } from '@vite-pwa/vitepress';
 import { metadata } from '@lazyqwik/metadata';
 import { upperFirst } from 'es-toolkit';
-import { resolve } from 'pathe';
 
 const Guide = [
 	{ text: 'Get Started', link: '/guide/' },
@@ -38,67 +36,58 @@ const HookNavBar = metadata.map((v) => ({
 	activeMatch: '(?!)',
 }));
 
-export default withPwa(
-	defineConfig({
-		title: 'LazyQwik',
-		description: 'Collection of essential Qwik hooks',
-		lang: 'en-US',
-		ignoreDeadLinks: true,
+export default defineConfig({
+	title: 'LazyQwik',
+	description: 'Collection of essential Qwik hooks',
+	lang: 'en-US',
+	ignoreDeadLinks: true,
 
-		vite: {},
+	vite: {},
 
-		sitemap: {
-			hostname: 'https://lazyqwik.qwiksilverlabs.com',
+	sitemap: {
+		hostname: 'https://lazyqwik.qwiksilverlabs.com',
+	},
+
+	rewrites: {
+		':module/src/:slug*': ':module/:slug*',
+	},
+
+	themeConfig: {
+		logo: '/favicon.svg',
+
+		search: {
+			provider: 'local',
 		},
 
-		rewrites: {
-			':module/src/:slug*': ':module/:slug*',
+		editLink: {
+			pattern: 'https://github.com/qwiksilverlabs/lazyqwik/tree/main/packages/:path',
+			text: 'Suggest changes to this page',
 		},
 
-		themeConfig: {
-			logo: '/favicon.svg',
-
-			search: {
-				provider: 'local',
-			},
-
-			editLink: {
-				pattern: 'https://github.com/qwiksilverlabs/lazyqwik/tree/main/packages/:path',
-				text: 'Suggest changes to this page',
-			},
-
-			footer: {
-				message: 'Released under the MIT License.',
-				copyright: 'Copyright © 2026 Qwiksilver Labs and LazyQwik contributors',
-			},
-
-			nav: [
-				{
-					text: 'Guide',
-					items: [{ text: 'Guide', items: Guide }],
-				},
-				{
-					text: 'Hooks',
-					activeMatch: '^/hooks',
-					items: [
-						{ text: 'All hooks', link: '/hooks', activeMatch: '(?!)' },
-						...HookNavBar,
-					],
-				},
-			],
-
-			sidebar: {
-				'/guide/': DefaultSideBar,
-				'/contributing': DefaultSideBar,
-				'/hooks': HookSideBar,
-				...ModuleSideBar,
-			},
-
-			socialLinks: [{ icon: 'github', link: 'https://github.com/qwiksilverlabs/lazyqwik' }],
+		footer: {
+			message: 'Released under the MIT License.',
+			copyright: 'Copyright © 2026 Qwiksilver Labs and LazyQwik contributors',
 		},
-		pwa: {
-			registerType: 'autoUpdate',
-			injectRegister: 'inline',
+
+		nav: [
+			{
+				text: 'Guide',
+				items: [{ text: 'Guide', items: Guide }],
+			},
+			{
+				text: 'Hooks',
+				activeMatch: '^/hooks',
+				items: [{ text: 'All hooks', link: '/hooks', activeMatch: '(?!)' }, ...HookNavBar],
+			},
+		],
+
+		sidebar: {
+			'/guide/': DefaultSideBar,
+			'/contributing': DefaultSideBar,
+			'/hooks': HookSideBar,
+			...ModuleSideBar,
 		},
-	}),
-);
+
+		socialLinks: [{ icon: 'github', link: 'https://github.com/qwiksilverlabs/lazyqwik' }],
+	},
+});
