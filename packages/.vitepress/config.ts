@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { metadata } from '@lazyqwik/metadata';
 import { upperFirst } from 'es-toolkit';
+import { transformerTwoslash } from '@shikijs/vitepress-twoslash';
 
 const Guide = [
 	{ text: 'Get Started', link: '/guide/' },
@@ -43,6 +44,11 @@ export default defineConfig({
 	ignoreDeadLinks: true,
 
 	vite: {},
+
+	markdown: {
+		codeTransformers: [transformerTwoslash()],
+		languages: ['tsx'],
+	},
 
 	sitemap: {
 		hostname: 'https://lazyqwik.qwiksilverlabs.com',

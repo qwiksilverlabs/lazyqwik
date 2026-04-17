@@ -13,13 +13,15 @@
 		"up": "vp exec taze",
 		"bump": "vp exec bumpp",
 		"prepare": "vp config",
-		"docs": "vitepress dev packages",
+		"docs": "vitepress dev packages --host",
 		"docs:preview": "vitepress preview packages",
 		"update": "vp run -r update"
 	},
 	"devDependencies": {
 		"@builder.io/qwik": "catalog:dev",
+		"@lazyqwik/math": "workspace:*",
 		"@lazyqwik/metadata": "workspace:*",
+		"@shikijs/vitepress-twoslash": "catalog:dev",
 		"@types/node": "catalog:types",
 		"bumpp": "catalog:dev",
 		"es-toolkit": "catalog:dev",
