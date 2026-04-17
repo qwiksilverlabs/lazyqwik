@@ -17,6 +17,10 @@ export default defineConfig({
 				command: 'vitepress dev packages',
 				dependsOn: ['update'],
 			},
+			'docs:preview': {
+				command: 'vitepress preview packages',
+				dependsOn: ['docs:build'],
+			},
 		},
 	},
 	fmt: {
