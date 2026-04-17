@@ -1,5 +1,5 @@
 import { useComputed$ } from '@builder.io/qwik';
-import { MaybeSignalArgs, toValue, toValueArgs } from '@lazyqwik/shared';
+import { MaybeSignalArgs, toValue, toValueArgs } from '@qwikgear/shared';
 
 export function useAverage(...values: MaybeSignalArgs<number>) {
 	return useComputed$(() => {

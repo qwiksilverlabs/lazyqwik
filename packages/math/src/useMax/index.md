@@ -5,7 +5,7 @@ Reactive `Math.max`.
 ## Usage
 
 ```ts
-import { useMax } from '@lazyqwik/math';
+import { useMax } from '@qwikgear/math';
 
 const a = useSignal(1);
 const b = useSignal(2);

@@ -2,7 +2,7 @@
     <img src="./.github/assets/mascot.png" width="150">
 </p>
 
-<h1 align="center">LazyQwik</h1>
+<h1 align="center">QwikGear</h1>
 
 > [!WARNING]
 > THIS PROJECT IS A WORK IN PROGRESS!

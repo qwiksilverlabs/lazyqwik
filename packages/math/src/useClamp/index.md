@@ -5,7 +5,7 @@ Clamp a value between a minimum and maximum reactively.
 ## Usage
 
 ```tsx
-import { useClamp } from '@lazyqwik/math';
+import { useClamp } from '@qwikgear/math';
 
 const a = useSignal(1);
 const b = useSignal(4);

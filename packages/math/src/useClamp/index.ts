@@ -1,5 +1,5 @@
 import { useComputed$ } from '@builder.io/qwik';
-import { getSignalValue, MaybeSignal } from '@lazyqwik/shared';
+import { getSignalValue, MaybeSignal } from '@qwikgear/shared';
 
 export function useClamp(
 	current: MaybeSignal<number>,

@@ -5,7 +5,7 @@
 ## Usage
 
 ```tsx
-import { logicOr } from '@lazyqwik/math';
+import { logicOr } from '@qwikgear/math';
 import { useSignal } from '@builder.io/qwik';
 
 const a = useSignal(true);

@@ -1,5 +1,5 @@
 {
-	"name": "@lazyqwik/monorepo",
+	"name": "@qwikgear/monorepo",
 	"version": "0.0.1",
 	"private": true,
 	"description": "Collection of essential Qwik hooks",
@@ -12,8 +12,8 @@
 	},
 	"devDependencies": {
 		"@builder.io/qwik": "catalog:dev",
-		"@lazyqwik/math": "workspace:*",
-		"@lazyqwik/metadata": "workspace:*",
+		"@qwikgear/math": "workspace:*",
+		"@qwikgear/metadata": "workspace:*",
 		"@shikijs/vitepress-twoslash": "catalog:dev",
 		"@types/node": "catalog:types",
 		"bumpp": "catalog:dev",

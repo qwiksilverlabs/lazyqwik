@@ -5,7 +5,7 @@ Reactive `Math.abs`.
 ## Usage
 
 ```tsx
-import { useAbs } from '@lazyqwik/math';
+import { useAbs } from '@qwikgear/math';
 
 const a = useSignal(-1);
 

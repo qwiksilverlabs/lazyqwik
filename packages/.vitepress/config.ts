@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-import { metadata } from '@lazyqwik/metadata';
+import { metadata } from '@qwikgear/metadata';
 import { upperFirst } from 'es-toolkit';
 import { transformerTwoslash } from '@shikijs/vitepress-twoslash';
 
@@ -38,7 +38,7 @@ const HookNavBar = metadata.map((v) => ({
 }));
 
 export default defineConfig({
-	title: 'LazyQwik',
+	title: 'QwikGear',
 	description: 'Collection of essential Qwik hooks',
 	lang: 'en-US',
 	ignoreDeadLinks: true,
@@ -51,7 +51,7 @@ export default defineConfig({
 	},
 
 	sitemap: {
-		hostname: 'https://lazyqwik.qwiksilverlabs.com',
+		hostname: 'https://qwikgear.qwiksilverlabs.com',
 	},
 
 	rewrites: {
@@ -67,13 +67,13 @@ export default defineConfig({
 		},
 
 		editLink: {
-			pattern: 'https://github.com/qwiksilverlabs/lazyqwik/tree/main/packages/:path',
+			pattern: 'https://github.com/qwiksilverlabs/qwikgear/tree/main/packages/:path',
 			text: 'Suggest changes to this page',
 		},
 
 		footer: {
 			message: 'Released under the MIT License.',
-			copyright: 'Copyright © 2026 Qwiksilver Labs and LazyQwik contributors',
+			copyright: 'Copyright © 2026 Qwiksilver Labs and QwikGear contributors',
 		},
 
 		nav: [
@@ -95,6 +95,6 @@ export default defineConfig({
 			...ModuleSideBar,
 		},
 
-		socialLinks: [{ icon: 'github', link: 'https://github.com/qwiksilverlabs/lazyqwik' }],
+		socialLinks: [{ icon: 'github', link: 'https://github.com/qwiksilverlabs/qwikgear' }],
 	},
 });

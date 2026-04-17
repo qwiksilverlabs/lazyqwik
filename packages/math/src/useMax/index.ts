@@ -1,5 +1,5 @@
 import { isSignal, ReadonlySignal, useComputed$ } from '@builder.io/qwik';
-import { MaybeSignal } from '@lazyqwik/shared';
+import { MaybeSignal } from '@qwikgear/shared';
 
 export function useMax(
 	...numbers: MaybeSignal<number>[] | [MaybeSignal<number[]>]

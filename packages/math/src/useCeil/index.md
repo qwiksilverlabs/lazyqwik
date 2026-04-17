@@ -5,7 +5,7 @@ Calculates the ceiling of the given number reactively.
 ## Usage
 
 ```tsx
-import { useCeil } from '@lazyqwik/math';
+import { useCeil } from '@qwikgear/math';
 
 const a = useSignal(1.6);
 

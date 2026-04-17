@@ -5,15 +5,15 @@ LazyQwik is a collection of utility hooks for [Qwik](https://qwik.dev/). Before 
 ## Installation
 
 ```bash
-npm i @lazyqwik/core
+npm i @qwikgear/core
 ```
 
 ## Example
 
-Just import the hook you need from `@lazyqwik/core`
+Just import the hook you need from `@qwikgear/core`
 
 ```tsx
-import { useToggle } from '@lazyqwik/core';
+import { useToggle } from '@qwikgear/core';
 
 const [toggle, setToggle] = useToggle();
 ```

@@ -1,5 +1,5 @@
 {
-	"name": "@lazyqwik/metadata",
+	"name": "@qwikgear/metadata",
 	"version": "0.0.1",
 	"private": true,
 	"description": "Collection of essential Qwik hooks",

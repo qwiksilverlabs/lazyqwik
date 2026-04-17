@@ -11,7 +11,7 @@ export default defineConfig({
 			},
 			'docs:build': {
 				command: 'vitepress build packages',
-				dependsOn: ['update', '@lazyqwik/metadata#build'],
+				dependsOn: ['update', '@qwikgear/metadata#build'],
 			},
 			docs: {
 				command: 'vitepress dev packages',
@@ -23,19 +23,19 @@ export default defineConfig({
 			},
 			check: {
 				command: 'vp check',
-				dependsOn: ['update', '@lazyqwik/metadata#build'],
+				dependsOn: ['update', '@qwikgear/metadata#build'],
 			},
 			'check:fix': {
 				command: 'vp check --fix',
-				dependsOn: ['update', '@lazyqwik/metadata#build'],
+				dependsOn: ['update', '@qwikgear/metadata#build'],
 			},
 			test: {
 				command: 'vpr -r test',
-				dependsOn: ['update', '@lazyqwik/metadata#build'],
+				dependsOn: ['update', '@qwikgear/metadata#build'],
 			},
 			'test:watch': {
 				command: 'vpr -r test:watch',
-				dependsOn: ['update', '@lazyqwik/metadata#build'],
+				dependsOn: ['update', '@qwikgear/metadata#build'],
 			},
 		},
 	},

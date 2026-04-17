@@ -5,7 +5,7 @@ Reactive `Math.trunc`.
 ## Usage
 
 ```ts
-import { useTrunc } from '@lazyqwik/math';
+import { useTrunc } from '@qwikgear/math';
 
 const a = useSignal(1.5);
 

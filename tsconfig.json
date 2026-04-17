@@ -13,12 +13,12 @@
 		"isolatedModules": true,
 
 		"paths": {
-			"@lazyqwik/core": ["./packages/core/src/index.ts"],
-			"@lazyqwik/core/*": ["./packages/core/src/*"],
-			"@lazyqwik/math": ["./packages/math/src/index.ts"],
-			"@lazyqwik/math/*": ["./packages/math/src/*"],
-			"@lazyqwik/shared": ["./packages/shared/src/index.ts"],
-			"@lazyqwik/shared/*": ["./packages/shared/src/*"]
+			"@qwikgear/core": ["./packages/core/src/index.ts"],
+			"@qwikgear/core/*": ["./packages/core/src/*"],
+			"@qwikgear/math": ["./packages/math/src/index.ts"],
+			"@qwikgear/math/*": ["./packages/math/src/*"],
+			"@qwikgear/shared": ["./packages/shared/src/index.ts"],
+			"@qwikgear/shared/*": ["./packages/shared/src/*"]
 		},
 
 		"resolveJsonModule": true,

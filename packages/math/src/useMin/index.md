@@ -5,7 +5,7 @@ Reactive `Math.min`.
 ## Usage
 
 ```ts
-import { useMin } from '@lazyqwik/math';
+import { useMin } from '@qwikgear/math';
 
 const a = useSignal(1);
 const b = useSignal(2);

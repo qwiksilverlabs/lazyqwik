@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue';
-import { metadata } from '@lazyqwik/metadata';
+import { metadata } from '@qwikgear/metadata';
 import { upperFirst } from 'es-toolkit';
 
 const activeModule = ref<string | null>(null);

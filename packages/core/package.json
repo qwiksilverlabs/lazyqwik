@@ -1,16 +1,16 @@
 {
-	"name": "@lazyqwik/core",
+	"name": "@qwikgear/core",
 	"version": "0.0.1",
 	"description": "Collection of essential Qwik hooks",
 	"keywords": [
-		"lazyqwik",
 		"qwik",
 		"qwik-use",
+		"qwikgear",
 		"utils"
 	],
-	"homepage": "https://github.com/qwiksilverlabs/lazyqwik",
+	"homepage": "https://github.com/qwiksilverlabs/qwikgear",
 	"bugs": {
-		"url": "https://github.com/qwiksilverlabs/lazyqwik/issues"
+		"url": "https://github.com/qwiksilverlabs/qwikgear/issues"
 	},
 	"license": "MIT",
 	"author": {
@@ -20,7 +20,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/qwiksilverlabs/lazyqwik.git",
+		"url": "git+https://github.com/qwiksilverlabs/qwikgear.git",
 		"directory": "packages/core"
 	},
 	"files": [

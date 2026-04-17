@@ -65,10 +65,10 @@ importers:
       '@builder.io/qwik':
         specifier: catalog:dev
         version: 1.19.2(vite@8.0.7(@types/node@24.12.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
-      '@lazyqwik/math':
+      '@qwikgear/math':
         specifier: workspace:*
         version: link:packages/math
-      '@lazyqwik/metadata':
+      '@qwikgear/metadata':
         specifier: workspace:*
         version: link:packages/metadata
       '@shikijs/vitepress-twoslash':
@@ -125,7 +125,7 @@ importers:
       '@builder.io/qwik':
         specifier: catalog:dev
         version: 1.19.2(vite@8.0.7(@types/node@25.6.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
-      '@lazyqwik/shared':
+      '@qwikgear/shared':
         specifier: 'workspace:'
         version: link:../shared
 

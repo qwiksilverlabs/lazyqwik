@@ -5,7 +5,7 @@ Calculates the floor of the given number reactively.
 ## Usage
 
 ```tsx
-import { useFloor } from '@lazyqwik/math';
+import { useFloor } from '@qwikgear/math';
 
 const a = useSignal(1.6);
 

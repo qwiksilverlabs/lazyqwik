@@ -5,7 +5,7 @@ A boolean switcher with utility functions.
 ## Usage
 
 ```tsx
-import { useToggle } from '@lazyqwik/core';
+import { useToggle } from '@qwikgear/core';
 
 export default component$(() => {
   const [value, toggle] = useToggle(false);
