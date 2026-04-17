@@ -6,7 +6,7 @@ import { transformerTwoslash } from '@shikijs/vitepress-twoslash';
 const Guide = [
 	{ text: 'Get Started', link: '/guide/' },
 	{ text: 'Best Practice', link: '/guide/best-practice' },
-	{ text: 'Contributing', link: '/contributing' },
+	{ text: 'Contributing', link: 'https://github.com/qwiksilverlabs/contribute' },
 ];
 
 const Modules = metadata.map((v) => ({
@@ -60,6 +60,7 @@ export default defineConfig({
 
 	themeConfig: {
 		logo: '/favicon.svg',
+		externalLinkIcon: true,
 
 		search: {
 			provider: 'local',
