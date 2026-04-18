@@ -20,6 +20,7 @@ catalogs:
     vitest: npm:@voidzero-dev/vite-plus-test@latest
     vue: ^3.5.32
     '@shikijs/vitepress-twoslash': ^4.0.2
+    gsap: ^3.15.0
   lint:
     oxlint-plugin-qwik: ^0.0.8
   types:

@@ -1,0 +1,55 @@
+{
+	"name": "@qwikgear/gsap",
+	"version": "0.0.1",
+	"description": "GSAP for Qwik",
+	"keywords": [
+		"gsap",
+		"qwik",
+		"qwik-use",
+		"qwikgear",
+		"utils"
+	],
+	"homepage": "https://github.com/qwiksilverlabs/qwikgear",
+	"bugs": {
+		"url": "https://github.com/qwiksilverlabs/qwikgear/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Toby Nguyen",
+		"email": "hi@tobynguyen.net",
+		"url": "https://tobynguyen.net"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/qwiksilverlabs/qwikgear.git",
+		"directory": "packages/gsap"
+	},
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"exports": {
+		".": "./dist/index.mjs",
+		"./package.json": "./package.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "vp pack",
+		"test": "vp test",
+		"test:watch": "vp test watch"
+	},
+	"dependencies": {
+		"@qwikgear/shared": "workspace:",
+		"gsap": "catalog:dev"
+	},
+	"peerDependencies": {
+		"@builder.io/qwik": "catalog:dev",
+		"gsap": "catalog:dev"
+	},
+	"engines": {
+		"node": ">=22.12.0"
+	},
+	"packageManager": "pnpm@10.33.0"
+}
