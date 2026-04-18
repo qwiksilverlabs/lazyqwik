@@ -1,6 +1,6 @@
 # useGSAP
 
-GSAP support for Qwik. `useGSAP()` is a drop-in replacement for `useVisibleTask$()` that automatically handles cleanup using gsap.context().
+GSAP support for Qwik. `useGSAP()` is a drop-in replacement for `useVisibleTask$()` that automatically handles cleanup using `gsap.context()`.
 
 ## Usage
 
