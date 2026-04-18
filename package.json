@@ -12,6 +12,7 @@
 	},
 	"devDependencies": {
 		"@builder.io/qwik": "catalog:dev",
+		"@qwikgear/core": "workspace:*",
 		"@qwikgear/math": "workspace:*",
 		"@qwikgear/metadata": "workspace:*",
 		"@shikijs/vitepress-twoslash": "catalog:dev",

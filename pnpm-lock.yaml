@@ -68,6 +68,9 @@ importers:
       '@builder.io/qwik':
         specifier: catalog:dev
         version: 1.19.2(vite@8.0.7(@types/node@24.12.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+      '@qwikgear/core':
+        specifier: workspace:*
+        version: link:packages/core
       '@qwikgear/math':
         specifier: workspace:*
         version: link:packages/math
