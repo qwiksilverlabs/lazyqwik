@@ -4,7 +4,7 @@ import { resolve } from 'pathe';
 import { globSync } from 'tinyglobby';
 import { ModuleMap } from '../types';
 
-const modules = ['core', 'math', 'shared'];
+const modules = ['core', 'math', 'shared', 'gsap'];
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
