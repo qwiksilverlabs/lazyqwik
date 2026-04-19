@@ -11,7 +11,7 @@ export default defineConfig({
 			},
 			'docs:build': {
 				command: 'vitepress build packages',
-				dependsOn: ['update', '@qwikgear/metadata#build'],
+				dependsOn: ['update', 'build'],
 			},
 			docs: {
 				command: 'vitepress dev packages',
