@@ -1,1 +1,1 @@
-export { useGSAP$ } from './useGSAP';
+export { useGSAP$ } from './useGSAP$';
