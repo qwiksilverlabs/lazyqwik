@@ -1,5 +1,6 @@
 // oxlint-disable qwik/no-use-visible-task
 import {
+	implicit$FirstArg,
 	type NoSerialize,
 	noSerialize,
 	type QRL,
@@ -28,7 +29,7 @@ function invokeResolvedQrl(qrl: QRL<(...args: any[]) => void>): void {
 	if (fn) fn(...captured);
 }
 
-export function useGSAP(callback?: QRL<() => void>, config?: UseGSAPConfig) {
+function useGSAP(callback?: QRL<() => void>, config?: UseGSAPConfig) {
 	const resolvedConfig = config ?? {};
 	const { scope, revertOnUpdate, dependencies = [] } = resolvedConfig;
 
@@ -86,3 +87,5 @@ useGSAP.register = (core: typeof gsap) => {
 	_gsap = core;
 };
 useGSAP.headless = true;
+
+export const useGSAP$ = implicit$FirstArg(useGSAP);

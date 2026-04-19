@@ -1,20 +1,18 @@
 # useGSAP
 
-GSAP support for Qwik. `useGSAP()` is a drop-in replacement for `useVisibleTask$()` that automatically handles cleanup using `gsap.context()`.
+GSAP support for Qwik. `useGSAP$()` is a drop-in replacement for `useVisibleTask$()` that automatically handles cleanup using `gsap.context()`.
 
 ## Usage
 
 ```tsx
 import { $, component$ } from '@builder.io/qwik';
 import gsap from 'gsap';
-import { useGSAP } from '@qwikgear/gsap';
+import { useGSAP$ } from '@qwikgear/gsap';
 
 export default component$(() => {
-  useGSAP(
-    $(() => {
-      gsap.to('#blue-box', { x: 300, yoyo: true, repeat: -1 });
-    }),
-  );
+  useGSAP$(() => {
+    gsap.to('#blue-box', { x: 300, yoyo: true, repeat: -1 });
+  });
 
   return (
     <div>
